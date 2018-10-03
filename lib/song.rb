@@ -55,6 +55,5 @@ class Song
     @name = song_array[1]
     song.name = @name
     song.artist_name = @artist_name
-binding.pry
   end
 end
