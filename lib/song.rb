@@ -48,7 +48,6 @@ class Song
   end
 
   def self.new_from_filename(artist_name_filetype)
-
     song_array = artist_name_filetype.split(/[-.]/).map(&:strip)
     song = self.new
     @artist_name = song_array[0]
@@ -57,4 +56,14 @@ class Song
     song.name = @name
     song
   end
+
+  def self.creat_from_filename(arist_name_filetype)
+    song_array = artist_name_filetype.split(/[-.]/).map(&:strip)
+    song = self.new
+    @artist_name = song_array[0]
+    @name = song_array[1]
+    song.artist_name = @artist_name
+    song.name = @name
+    @@all << song
+    song
 end
