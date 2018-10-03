@@ -50,9 +50,9 @@ class Song
   def self.new_from_filename(artist_name_filetype)
     artist_name_filetype.split(/[-.]/)
     song = self.new
-    @artist = artist_name_filetype[0]
+    @artist_name = artist_name_filetype[0]
     @name = artist_name_filetype[1]
     song.name = @name
-    song.artist = @artist
+    song.artist = @artist_name
   end
 end
