@@ -52,5 +52,7 @@ class Song
     song = self.new
     @artist = artist_name_filetype[0]
     @name = artist_name_filetype[1]
+    song.name = @name
+    song.artist = @artist
   end
 end
