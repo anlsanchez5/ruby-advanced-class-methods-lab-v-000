@@ -53,6 +53,9 @@ class Song
     song = self.new
     @artist_name = song_array[0]
     @name = song_array[1]
+    song.artist_name = @artist_name
+    song.name = @name
+    song
 
   end
 end
