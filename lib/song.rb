@@ -53,6 +53,6 @@ class Song
     @artist_name = artist_name_filetype[0]
     @name = artist_name_filetype[1]
     song.name = @name
-    song.artist = @artist_name
+    song.artist_name = @artist_name
   end
 end
