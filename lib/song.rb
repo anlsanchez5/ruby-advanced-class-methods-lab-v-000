@@ -40,7 +40,6 @@ class Song
       return self.name
     else
       self.create_by_name(name)
-binding.pry
     end
   end
 end
