@@ -49,7 +49,7 @@ class Song
 
   def self.new_from_filename(artist_name_filetype)
 
-    song_array = artist_name_filetype.split(/[-.]/)
+    song_array = artist_name_filetype.split(/[-.]/).map(&:strip)
     song_array.map(&:strip)
     song = self.new
     @artist_name = song_array[0]
