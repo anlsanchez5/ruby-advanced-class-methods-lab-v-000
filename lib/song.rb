@@ -42,4 +42,10 @@ class Song
       return @@all.last
     end
   end
+
+  def self.alphabetical
+    name = []
+    @@all.collect{|songs| name << songs.name}
+    name.sort
+  end
 end
